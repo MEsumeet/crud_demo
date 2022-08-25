@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRUD</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+	<h2 class="text-center bg-primary p-4"> This is for practice </h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<form id="stdForm">
+					<div class="form-group">
+						<label for="fname">First Name</label>
+						<input type="text" class="form-control" name="fname" id="fname">
+					</div>
+					<div class="form-group">
+						<label for="lname">Last Name</label>
+						<input type="text" class="form-control" name="lname" id="lname">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" name="email" id="email">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-primary" id="submitBtn" type="submit">Submit</button>
+						<button class="btn btn-primary d-none" id="updateBtn" type="button">Update</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-7 offset-1">
+				<table class="table table-striped table-dark">
+					<thead>
+					  <tr>
+						<th scope="col">Sr. No.</th>
+						<th scope="col">First Name</th>
+						<th scope="col">Last Name</th>
+						<th scope="col">Email</th>
+						<th scope="col">Edit</th>
+						<th scope="col">Delete</th>
+					  </tr>
+					</thead>
+					<tbody id="stdInfo">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/js/app.js"></script>
+</body>
+</html>
+
